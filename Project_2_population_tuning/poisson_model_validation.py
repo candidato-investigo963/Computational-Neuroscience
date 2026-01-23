@@ -2,7 +2,6 @@
 """
 Created on Mon Jan 19 05:34:34 2026
 
-@author: Pablo
 """
 
 import pickle
@@ -55,3 +54,4 @@ def check_poisson(neuron_data, neuron_name):
 
 for i in range(1, 5):
     check_poisson(data[f'neuron{i}'], f'Neuron {i}')
+
