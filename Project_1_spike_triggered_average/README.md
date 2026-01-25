@@ -12,7 +12,7 @@ The sampling rate of the data is 500 Hz.
 ## Method
 - Sampling period: 2 ms (1 / 500 Hz)
 - Time window: 300 ms before each spike
-- Number of time steps: 150
+- Number of time steps: 150, derived from the 300 ms window at a 2 ms sampling period.
 
 Spikes occurring before the first 300 ms are excluded to ensure that all stimulus segments have equal length.
 
