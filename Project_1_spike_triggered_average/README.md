@@ -14,14 +14,17 @@ The sampling rate of the data is 500 Hz.
 - Time window: 300 ms before each spike
 - Number of time steps: 150
 
-Spikes occurring before the first 300 ms are excluded.
-For each spike, the stimulus segment preceding it is extracted and averaged
-across all spikes to compute the STA.
+Spikes occurring before the first 300 ms are excluded to ensure that all stimulus segments have equal length.
+
+For each remaining spike, the stimulus segment immediately preceding the spike is extracted. These segments are summed and averaged across all spikes to compute the Spike-Triggered Average (STA), providing an estimate of the neuron’s linear temporal filter.
 
 ## Results
-The resulting STA represents the linear receptive field of the neuron.
+The computed STA shows a smooth temporal structure with a gradual increase in stimulus amplitude leading up to the spike, followed by a sharp drop immediately before spike time.
 
 ![Spike-Triggered Average](sta_plot.png)
+
+## Interpretation
+The shape of the STA is consistent with a leaky integrator model of neuronal processing. The neuron integrates incoming stimulus over time, but the influence of past stimuli decays progressively due to the passive properties of the membrane. As a result, recent stimuli contribute more strongly to spike generation than older inputs
 
 ## Files
 - `compute_sta.py`: function to compute the spike-triggered average
