@@ -3,7 +3,6 @@
 Created on Wed Jan 21 03:35:58 2026
 
 Fire a neuron via alpha function synapse and random input spike train
-R Rao 2007
 
 """
 
