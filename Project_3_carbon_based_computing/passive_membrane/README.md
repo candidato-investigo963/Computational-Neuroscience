@@ -92,7 +92,7 @@ Dividing the capacitance by 10 reduces the membrane time constant. This allows t
 ---
 
 ### Question 4 — Combined Change in R and C  
-Multiplying resistance by 10 and dividing capacitance by 10 leaves the product \( R \cdot C \) unchanged. As a result, the membrane reaches steady state at **the same rate**, even though the individual electrical properties have changed.
+Multiplying resistance by 10 and dividing capacitance by 10 leaves the product $$\tau = R \cdot C$$ unchanged. As a result, the membrane reaches steady state at **the same rate**, even though the individual electrical properties have changed.
 
 ---
 
