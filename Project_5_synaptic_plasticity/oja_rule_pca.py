@@ -10,12 +10,12 @@ Created on Wed Jan 21 20:03:31 2026
 # Implementación de la regla de Oja en Python
 # ---------------------------------------------------------
 
-# 1️⃣ Importar los módulos necesarios
+# Importar los módulos necesarios
 import numpy as np
 import matplotlib.pyplot as plt
 import pickle
 
-# 2️⃣ Cargar los datos
+# Cargar los datos
 # Objetivo: Abrir el archivo pickle que contiene los puntos (x,y)
 with open('_7bfd5defa66c4d019fdb4bd6af2a62b5_c10p1.pickle', 'rb') as f:
     data = pickle.load(f)
@@ -28,11 +28,11 @@ print(data.keys())  # muestra las claves disponibles
 # Ajusta esta línea según la clave exacta en tu pickle
 X = np.array(data['c10p1'], dtype=float)  # ahora X es un array numpy 2D
 
-# 3️⃣ Centrar los datos en la media
+# Centrar los datos en la media
 # Objetivo: Sustraer la media de cada columna para que los datos tengan media cero
 X = X - np.mean(X, axis=0)
 
-# 4️⃣ Visualizar los datos centrados
+# Visualizar los datos centrados
 # Objetivo: Comprobar que la nube de datos está centrada alrededor de (0,0)
 plt.figure(figsize=(6,6))
 plt.scatter(X[:,0], X[:,1], alpha=0.6)
@@ -42,7 +42,7 @@ plt.ylabel("y")
 plt.axis('equal')
 plt.show()
 
-# 5️⃣ Inicializar parámetros de la regla de Oja
+# Inicializar parámetros de la regla de Oja
 # eta: tasa de aprendizaje
 # alpha: parámetro de Oja
 # dt: paso de tiempo discreto
@@ -54,7 +54,7 @@ dt = 0.01
 n_iter = 100000
 w = np.random.rand(2)  # vector columna inicial aleatorio 2x1
 
-# 6️⃣ Aprendizaje en línea con la regla de Oja
+# Aprendizaje en línea con la regla de Oja
 # Objetivo: actualizar w usando cada punto de datos uno a uno, en bucle
 for t in range(n_iter):
     # Seleccionar punto de datos de forma cíclica
@@ -71,7 +71,7 @@ for t in range(n_iter):
 print("Vector de pesos final (w):")
 print(w)
 
-# 8️⃣ Visualizar vector de pesos sobre los datos
+# Visualizar vector de pesos sobre los datos
 # Objetivo: ver hacia dónde converge w en relación a la nube de datos
 plt.figure(figsize=(6,6))
 plt.scatter(X[:,0], X[:,1], alpha=0.6)
@@ -83,13 +83,4 @@ plt.ylabel("y")
 plt.axis('equal')
 plt.show()
 
-# ---------------------------------------------------------
-# 9️⃣ Interpretación final
-# - La regla de Oja hace que w converja al vector propio principal
-#   de la matriz de correlación (covarianza) de los datos centrados.
-# - Solo hay un vector propio principal, pero puede tomar el
-#   signo positivo o negativo (dirección paralela/opuesta).
-# - Este vector indica la dirección de máxima varianza en los datos.
-# - La actualización en línea es cíclica: cada punto contribuye
-#   gradualmente al aprendizaje de w.
-# ---------------------------------------------------------
+
