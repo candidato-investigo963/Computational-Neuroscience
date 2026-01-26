@@ -50,10 +50,6 @@ During the charging phase, the voltage approaches a steady-state value determine
 
 $$V_{\infty} = I \cdot R$$
 
-With the given parameters, this results in a theoretical steady-state voltage of:
-
-- **1000 mV**
-
 The simulation also measures the membrane time constant experimentally by recording the time at which the voltage reaches approximately 63.2% of its maximum value. The output shows:
 
 - C = 0.100 nF
