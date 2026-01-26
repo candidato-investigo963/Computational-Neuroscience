@@ -42,9 +42,7 @@ The tuning curves are plotted together to allow direct comparison between neuron
 
 To evaluate whether neural firing follows Poisson-like statistics, the variance-to-mean ratio (Fano Factor) is computed for each stimulus condition:
 
-\[
-F = \frac{\text{Variance}}{\text{Mean}}
-\]
+$$F = \frac{\text{Variance}}{\text{Mean}}$$
 
 For a Poisson process, this ratio is expected to be close to 1. The script computes:
 
@@ -73,9 +71,9 @@ The variance-to-mean ratios reveal different statistical regimes across the neur
 
 Because the data are provided as firing rates rather than raw spike counts, the Fano Factor is not expected to be exactly equal to 1. However, a truly Poisson process should still exhibit a stable and proportional relationship between variance and mean across stimulus conditions.
 
-Neurons 1, 2, and 4 display very low and highly consistent variance-to-mean ratios, indicating that their variability is compatible with Poisson-like firing statistics.
+- Neurons 1, 2, and 4 display very low and highly consistent variance-to-mean ratios, indicating that their variability is compatible with Poisson-like firing statistics.
 
-In contrast, Neuron 3 shows both a higher variance-to-mean ratio and much greater variability of this ratio across stimuli. This makes Neuron 3 the neuron that deviates most strongly from Poisson behavior.
+- In contrast, Neuron 3 shows both a higher variance-to-mean ratio and much greater variability of this ratio across stimuli. This makes Neuron 3 the neuron that deviates most strongly from Poisson behavior.
 
 Overall, these results highlight heterogeneity in firing reliability within the neural population, with most neurons exhibiting highly regular responses and one neuron displaying increased variability.
 
