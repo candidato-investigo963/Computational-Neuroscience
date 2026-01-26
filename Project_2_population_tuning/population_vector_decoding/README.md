@@ -36,7 +36,7 @@ The resulting vector is converted from Cartesian coordinates to an angular estim
 
 ## Results
 
-The decoded population vector is 112°, providing a single estimate of the unknown stimulus direction. This value reflects the combined influence of all neurons, demonstrating how unequal neural activity can be transformed into a meaningful sensory estimate at the population level.
+The decoded population vector is **112°**, providing a single estimate of the unknown stimulus direction. This value reflects the combined influence of all neurons, demonstrating how unequal neural activity can be transformed into a meaningful sensory estimate at the population level.
 
 ---
 
