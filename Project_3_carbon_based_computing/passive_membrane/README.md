@@ -72,7 +72,7 @@ $$\tau = R \cdot C = 10 \text{ ms}$$
 
 ## Interpretation
 
-### Question 11 — Steady-State Voltage  
+### Question 1 — Steady-State Voltage  
 If the input current is never turned off, the membrane voltage will continue rising until it reaches a stable value where the injected current is exactly balanced by the leak current through the resistance. This steady-state voltage is given by:
 
 $$V_{\infty} = I \cdot R$$
@@ -81,7 +81,7 @@ Using the parameters in the script, the membrane converges to **1000 mV**.
 
 ---
 
-### Question 12 — Effect of Increasing Resistance  
+### Question 2 — Effect of Increasing Resistance  
 Multiplying the resistance by 5 increases the membrane time constant:
 
 $$\tau = R \cdot C$$
@@ -90,17 +90,17 @@ This causes the membrane to reach its steady-state voltage **more slowly**, beca
 
 ---
 
-### Question 13 — Effect of Decreasing Capacitance  
+### Question 3 — Effect of Decreasing Capacitance  
 Dividing the capacitance by 10 reduces the membrane time constant. This allows the voltage to change more rapidly, so the membrane reaches steady state **more quickly**.
 
 ---
 
-### Question 14 — Combined Change in R and C  
+### Question 4 — Combined Change in R and C  
 Multiplying resistance by 10 and dividing capacitance by 10 leaves the product \( R \cdot C \) unchanged. As a result, the membrane reaches steady state at **the same rate**, even though the individual electrical properties have changed.
 
 ---
 
-### Question 15 — Theoretical Justification of the Time Constant Method  
+### Question 5 — Theoretical Justification of the Time Constant Method  
 
 Solving the membrane equation:
 
